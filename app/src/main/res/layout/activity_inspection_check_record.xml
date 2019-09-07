@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- Start Layout Header -->
+
+        <LinearLayout
+            android:id="@+id/layout_header"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:background="@color/base_down"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_back"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:text="Check Equipment"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- End Layout Header -->
+            <!-- Start Layout Content -->
+
+            <LinearLayout
+                android:id="@+id/lay_content_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#D8EBFF">
+
+                    <!-- Start Layout List Check Equipment -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="fill_parent">
+
+                        <!-- Start Header -->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:weightSum="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_weight="0.4"
+                                android:orientation="horizontal"
+                                android:layout_height="fill_parent">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:layout_margin="1sp"
+                                    android:text="Code"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:layout_margin="1sp"
+                                    android:text="Category"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center|left"
+                                    android:layout_margin="1sp"
+                                    android:paddingLeft="5dp"
+                                    android:background="@color/white"
+                                    android:text="Checks Equipment"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_weight="0.6"
+                                android:weightSum="1"
+                                android:orientation="horizontal"
+                                android:layout_height="fill_parent">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:layout_weight="0.5"
+                                    android:layout_margin="1sp"
+                                    android:text="Result"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:background="@color/white"
+                                    android:text="Action"
+                                    android:layout_margin="1sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- End header -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@color/white"
+                            android:layout_height="fill_parent">
+
+                            <ListView
+                                android:id="@+id/listview"
+                                android:layout_width="fill_parent"
+                                android:dividerHeight="1dp"
+                                android:layout_height="fill_parent"></ListView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- End Layout List Check Equipment -->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- End Layout Content -->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

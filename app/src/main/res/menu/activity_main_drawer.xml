@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_dashboard" />
+
+        <item
+            android:id="@+id/nav_campaign"
+            android:icon="@drawable/ic_campaign"
+            android:title="@string/menu_campaign" />
+
+        <item
+            android:id="@+id/nav_dpr"
+            android:icon="@drawable/ic_dpr"
+            android:title="@string/menu_dpr" />
+
+        <item
+            android:id="@+id/nav_data_management"
+            android:icon="@drawable/ic_database"
+            android:title="@string/menu_data_management" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
+    </group>
+
+</menu>

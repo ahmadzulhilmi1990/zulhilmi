@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exs.appexssynergy"
+    android:versionCode="1"
+    android:versionName="1.0.1">
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Needed permissions in order to scan for beacons. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Needed permissions in order to get current location. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATE" />
+
+    <!-- Create Local Database -->
+    <meta-data android:name="DATABASE" android:value="exs.db" />
+    <meta-data android:name="VERSION" android:value="2" />
+    <meta-data android:name="QUERY_LOG" android:value="true" />
+    <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.exs.appexssynergy.orm" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_exs"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.exs.appexssynergy.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.exs.appexssynergy.ActivitySignin"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.exs.appexssynergy.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.exs.appexssynergy.Dashboard"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.exs.appexssynergy.ActivityInspectionTestRecord"
+            android:screenOrientation="landscape"
+            android:label="Inspection Test Record"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.exs.appexssynergy.ActivityCheckInspectionRecord"
+            android:screenOrientation="landscape"
+            android:label="Check Equipment"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.exs.appexssynergy.ActivitySafetyPrecautions"
+            android:screenOrientation="landscape"
+            android:label="Check Equipment"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.exs.appexssynergy.ActivityProtectionType"
+            android:screenOrientation="landscape"
+            android:label="Protection Type"
+            android:windowSoftInputMode="stateHidden"
+            />
+
+        <activity
+            android:name="com.exs.appexssynergy.ActivityChecklist"
+            android:screenOrientation="landscape"
+            android:label="Check Equipment"
+            android:windowSoftInputMode="stateHidden"
+            />
+
+        <activity
+            android:name="com.exs.appexssynergy.ActivityAddNewInspection"
+            android:screenOrientation="landscape"
+            android:label="Select Equipment"
+            android:windowSoftInputMode="stateHidden"
+            />
+
+        <activity
+            android:name="com.exs.appexssynergy.ActivityCreateDPR"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"
+            />
+
+    </application>
+
+</manifest>

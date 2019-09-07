@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_module_area">
+        <item>Top Deck</item>
+        <item>Upper Deck</item>
+        <item>Main Deck</item>
+        <item>Cellar Deck</item>
+        <item>Sump Deck</item>
+        <item>Mezzanine Deck</item>
+    </string-array>
+</resources>
